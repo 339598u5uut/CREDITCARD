@@ -7,7 +7,7 @@
         "dev": "parcel index.html",
         "build": "parcel build index.html",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "eslint": "^7.15.0",
@@ -18,8 +18,13 @@
         "parcel": "^2.5.0"
     },
     "dependencies": {
+        "babel-eslint": "^10.1.0",
         "creditcard.js": "^3.0.17",
         "imask": "^6.4.2",
         "redom": "^3.27.3"
-    }
+    },
+
+    "extends": "standard",
+    "parser": "babel-eslint"
+
 }

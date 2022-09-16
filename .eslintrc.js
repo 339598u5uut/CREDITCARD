@@ -1,6 +1,7 @@
 module.exports = {
     root: true,
-    extends: ['airbnb-base'],
+    extends: ['standard'],
+    parser: 'babel-eslint',
     env: {
         browser: true,
     },
@@ -12,4 +13,5 @@ module.exports = {
         'no-restricted-syntax': [2, 'WithStatement'],
         'func-style': 0,
     },
+
 };

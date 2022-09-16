@@ -5,13 +5,16 @@
         "lint": "eslint ./",
         "lint:report": "eslint ./",
         "dev": "parcel index.html",
-        "build": "parcel build index.html"
+        "build": "parcel build index.html",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "devDependencies": {
         "eslint": "^7.15.0",
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-formatter-gitlab": "^2.1.0",
         "eslint-plugin-import": "^2.22.1",
+        "gh-pages": "^4.0.0",
         "parcel": "^2.5.0"
     },
     "dependencies": {
